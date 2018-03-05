@@ -81,8 +81,8 @@ abstract class IntercomAbstractClient extends Client
         $this->setDefaultOption(
             'auth',
             [
-                $user,
-                $password,
+                $password.':', //$user,
+                '', //$password,
                 'Basic'
             ]
         );
